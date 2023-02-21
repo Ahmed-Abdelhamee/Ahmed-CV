@@ -83,10 +83,10 @@
   .groupTitle{
     text-align: center;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
     color: gray;
     color: rgb(35, 74, 129);
-
+    font-weight: 600;
     font-family: 'Tourney', cursive;
     margin: 25px 0px;
   }
@@ -215,9 +215,9 @@ ul .skill{
 
 
    /* header style */
-   .header{
+   /* .header{ */
     /* background-image: url(photos/max.png); */
-   }
+   /* } */
    .header .bigname{
       font-size: 23px;
       margin-bottom: 5px;
@@ -245,8 +245,8 @@ ul .skill{
     height: 25px;
    }
    .header .head img{
-    height: 200px;
-    width: 150px;
+    height: 185px;
+    width: 135px;
    }
 
    /* --------------*/
@@ -268,9 +268,10 @@ ul .skill{
 
 
    .groupTitle{
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 600;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
    }
    .paragraph{
     font-size: 13px;
