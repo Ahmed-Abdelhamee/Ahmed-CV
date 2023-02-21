@@ -7,7 +7,10 @@
       float: left;
 }
 
-
+:root {
+  --main-color: white;
+  /* --main-color:  rgb(178, 222, 236);; */
+}
   /* --------------- header -----------------*/
 
   .header{
@@ -17,7 +20,7 @@
     height: 700px;
     background-image: url(photos/view.png);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
   }
   .header .bigname{
       font-size: 35px;
@@ -26,11 +29,10 @@
       padding: 25px;
       font-family: 'Lobster', cursive;
       /* color: rgb(62, 159, 188); */
-      /* color: rgb(178, 222, 236); */
-      color: rgb(178, 222, 236);
+      color: var(--main-color);
     }
     .header .bigname a{
-      color: rgb(178, 222, 236);
+      color: var(--main-color);
     }
     .mobile{
       display: none;
@@ -46,7 +48,7 @@
     float: right;
   }
   .welcomeText{
-    color: rgb(178, 222, 236);
+    color: var(--main-color);
     font-size: 30px;
     padding-top: 80px;
     font-family: 'Lobster', cursive;
@@ -61,7 +63,8 @@
   }
   .link{
     font-size: 25px;
-    color: rgb(200, 242, 255);
+    /* color: rgb(200, 242, 255); */
+    color: var(--main-color);
     text-transform: capitalize;    
   }
   .link:hover{
@@ -215,9 +218,10 @@ ul .skill{
 
 
    /* header style */
-   /* .header{ */
+   .header{ 
     /* background-image: url(photos/max.png); */
-   /* } */
+    background-size: cover;
+   }
    .header .bigname{
       font-size: 23px;
       margin-bottom: 5px;
