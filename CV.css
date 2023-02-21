@@ -11,6 +11,26 @@
   --main-color: white;
   /* --main-color:  rgb(178, 222, 236);; */
 }
+
+@keyframes fadeUp {
+  /* 0%{ margin-top: 24px; opacity: 0;};
+  25%{ margin-top: 18px; opacity: .25;};
+  50%{ margin-top: 12px; opacity: .5;};
+  75%{ margin-top: 6px; opacity: .75;};
+  100%{ margin-top: 0px; opacity: 1;}; */
+  from{ margin-top: 100px; opacity: 0;};
+  to{ margin-top: 0px; opacity: 1;};
+}
+@keyframes fadeLeft {
+  /* 0%{ margin-top: 24px; opacity: 0;};
+  25%{ margin-top: 18px; opacity: .25;};
+  50%{ margin-top: 12px; opacity: .5;};
+  75%{ margin-top: 6px; opacity: .75;};
+  100%{ margin-top: 0px; opacity: 1;}; */
+  from{ margin-left: 100px; opacity: 0;};
+  to{ margin-top: 0px; opacity: 1;};
+
+}
   /* --------------- header -----------------*/
 
   .header{
@@ -46,6 +66,8 @@
     height: 350px;
     width: 250px;
     float: right;
+    animation-name: fadeUp;
+    animation-duration: 3.5s;
   }
   .welcomeText{
     color: var(--main-color);
@@ -53,6 +75,8 @@
     padding-top: 80px;
     font-family: 'Lobster', cursive;
     text-align: center;
+    animation-name: fadeUp;
+    animation-duration: 3.5s;
   }
   .links{
     padding-top: 30px;
@@ -60,6 +84,8 @@
   div div .linkDiv{
     margin-bottom: 20px;
     padding-left: 60px;
+    animation-name: fadeLeft;
+    animation-duration: 3s;
   }
   .link{
     font-size: 25px;
@@ -240,6 +266,7 @@ ul .skill{
    .header div div .linkDiv{
     padding: 5px;
     margin-bottom: 5px;
+    animation: both
    }
    .header div div div .link{
     font-size: 15px;
