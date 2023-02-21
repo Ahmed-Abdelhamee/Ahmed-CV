@@ -1,0 +1,296 @@
+
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+      float: left;
+}
+
+
+  /* --------------- header -----------------*/
+
+  .header{
+    /* background-color: rgb(226, 226, 226); */
+    background-color: rgb(228, 228, 228);
+  }
+  .header .bigname{
+      font-size: 35px;
+      text-align: center;
+      padding: 25px;
+      font-family: 'Lobster', cursive;
+      color: rgb(62, 159, 188);
+    }
+  #myheaderPhoto{
+    border-radius: 45px;
+  height: 125px;
+  width: 125px;
+  /* position: fixed; */
+  transition: transform 2s;
+  }
+   /*------------------------------------*/
+
+
+
+   /* -------------left side -----------*/
+  .col-sm-3{
+    position: relative;
+    background-color: rgb(242, 242, 242);
+  }
+  .myphoto{
+    position: fixed;
+    padding: 5px;
+    padding-top: 120px;
+    height: 550px;
+    /* background-color: rgb(242, 242, 242); */
+    background-color: rgb(243, 243, 243);
+    width: 25%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: -1;
+  }
+  .myphoto img{
+    position: relative;
+    border-radius: 105px;
+    height: 255px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    transition: transform 2s;
+  }
+  .myphoto p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px;
+    color: gray;
+  }
+
+  /*----------------------------------*/
+
+
+
+  /*--------- center content --------*/
+  .CV_content{
+    margin-top: 15px;
+    scroll-behavior: smooth;
+  }
+  .groupTitle{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: gray;
+    font-family: 'Tourney', cursive;
+  }
+  .paragraph{
+    padding: 10px;
+    font-weight: 650;
+    font-size: 18px;
+    padding-left: 30px;
+    color: rgb(90, 88, 88);
+  }
+
+  /* // personal department icons  */
+  .Personelicon{
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+  }
+  #locationImage{
+    margin-left: 0px;
+  }
+/*---------------------------------*/
+
+.videoTitle{
+  margin-top: 120px;
+  margin-bottom: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: gray;
+}
+
+h2{
+  text-align: center;
+}
+
+ul .skill{
+  font-size: 25px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+.liGroup{
+  margin-top: 30px;
+}
+/* #myProjects{
+  margin-top: 150px;
+} */
+#personal{
+  margin-top: 5px;
+}
+#summary{
+  margin-top: 120px;
+}
+#Education{
+  margin-top: 120px;
+}
+
+#Education img{
+  height: 35px;
+  width: 35px;
+  margin-bottom: 10px;
+  
+}
+.faculty{
+  margin-top: -10px;
+}
+#frontendSkills{
+  margin-top: 100px;
+}
+#skills{
+  margin-top: 120px;
+}
+#languges{
+  margin-top: 70px;
+}
+#hobbies{
+  margin-top: 70px;
+
+  margin-bottom: 200px;
+}
+
+/*----------------------------------*/
+
+
+
+/*----------- right side -----------*/
+
+.CV_list{
+  position: fixed;
+  padding-top: 120px;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ top: 0px;
+ bottom: 0px;
+ height: 100%;
+ background-color: rgb(243, 243, 243);
+ z-index: -1;
+}
+.CV_list button{
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid rgb(192, 192, 192);
+  padding: 5px;
+  color: rgb(62, 159, 188);
+}
+.CV_list button:hover{
+    color: white;
+    background-color: rgb(167, 167, 167)
+}
+.spectialfontsize{
+  font-size: 17px;
+}
+
+
+
+/* ------------------- mobile view ------------------- */
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+   [class*="col-"] {
+    width: 100%;
+   }
+   .myphoto{
+     display: none;
+   }
+   .CV_list{
+     display: none;
+   }
+
+
+   /* header style */
+   .header .bigname{
+      font-size: 23px;
+   }
+   /* --------------*/
+
+   /* personal department */
+   #personal{
+    padding: 0px;
+    margin: 0px;
+   }
+   #personal img{
+    height: 20px;
+    width: 20px;
+   }
+   #mailImage{
+    display: none;
+   }
+   /* --------------------*/
+
+
+   .groupTitle{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+   }
+   .paragraph{
+    font-size: 13px;
+    margin-top: 0px;
+   }
+   .liGroup{
+    margin-top: 5px;
+  }
+  ul .skill{
+    font-size: 13px;
+    display: block;
+    line-height: 10px;
+    margin-left: -25px;
+    font-weight: bold;
+  }
+
+  /* other departments */
+   #summary{
+    padding: 0px;
+    margin: 0px;
+  }
+  #Education{
+    padding: 0px;
+    margin: 0px;
+  }
+  #Education img{
+    display: none;
+  }
+  .faculty{
+    margin-top: -10px;
+  }
+  #frontendSkills{
+    padding: 0px;
+    margin: 0px;
+  }
+  #frontendSkills ul li{
+    font-size: 13px;
+  }
+  #skills{
+    padding: 0px;
+    margin: 0px;
+  }
+  #languges{
+    padding: 0px;
+    margin: 0px;
+  }
+  #hobbies{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 200px;
+  }
+  
+}
+
+/*-----------------------------------------------------*/

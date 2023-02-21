@@ -13,76 +13,82 @@
   .header{
     /* background-color: rgb(226, 226, 226); */
     background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 700px;
+    background-image: url(photos/view.png);
+    background-attachment: fixed;
+    background-size: cover;
   }
   .header .bigname{
       font-size: 35px;
+      margin-bottom: 20px;
       text-align: center;
       padding: 25px;
       font-family: 'Lobster', cursive;
-      color: rgb(62, 159, 188);
+      /* color: rgb(62, 159, 188); */
+      /* color: rgb(178, 222, 236); */
+      color: rgb(178, 222, 236);
     }
-  #myheaderPhoto{
-    border-radius: 45px;
-  height: 125px;
-  width: 125px;
-  /* position: fixed; */
-  transition: transform 2s;
+    .header .bigname a{
+      color: rgb(178, 222, 236);
+    }
+    .mobile{
+      display: none;
+     }
+     .desktop{
+      display: block;
+     }
+  .head img{
+    position: relative;
+    border-radius: 205px;
+    height: 350px;
+    width: 250px;
+    float: right;
+  }
+  .welcomeText{
+    color: rgb(178, 222, 236);
+    font-size: 30px;
+    padding-top: 80px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+  }
+  .links{
+    padding-top: 30px;
+  }
+  div div .linkDiv{
+    margin-bottom: 20px;
+    padding-left: 60px;
+  }
+  .link{
+    font-size: 25px;
+    color: rgb(200, 242, 255);
+    text-transform: capitalize;    
+  }
+  .link:hover{
+    color: white;
+  }
+  .link img{
+    width: 40px;
+    height: 40px;
   }
    /*------------------------------------*/
-
-
-
-   /* -------------left side -----------*/
-  .col-sm-3{
-    position: relative;
-    background-color: rgb(242, 242, 242);
-  }
-  .myphoto{
-    position: fixed;
-    padding: 5px;
-    padding-top: 120px;
-    height: 550px;
-    /* background-color: rgb(242, 242, 242); */
-    background-color: rgb(243, 243, 243);
-    width: 25%;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    z-index: -1;
-  }
-  .myphoto img{
-    position: relative;
-    border-radius: 105px;
-    height: 255px;
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 30px;
-    margin-left: 10%;
-    transition: transform 2s;
-  }
-  .myphoto p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 0px;
-    color: gray;
-  }
-
-  /*----------------------------------*/
-
 
 
   /*--------- center content --------*/
   .CV_content{
     margin-top: 15px;
+    padding: 0px 5% ;
     scroll-behavior: smooth;
   }
   .groupTitle{
     text-align: center;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 26px;
     color: gray;
+    color: rgb(35, 74, 129);
+
     font-family: 'Tourney', cursive;
+    margin: 25px 0px;
   }
   .paragraph{
     padding: 10px;
@@ -103,20 +109,6 @@
   }
 /*---------------------------------*/
 
-.videoTitle{
-  margin-top: 120px;
-  margin-bottom: 30px;
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: gray;
-}
-
-h2{
-  text-align: center;
-}
-
 ul .skill{
   font-size: 25px;
   padding-left: 20px;
@@ -125,17 +117,16 @@ ul .skill{
 .liGroup{
   margin-top: 30px;
 }
-/* #myProjects{
-  margin-top: 150px;
-} */
+
 #personal{
   margin-top: 5px;
+  margin-bottom: 200px;
 }
 #summary{
-  margin-top: 120px;
+  margin-top: 30px;
 }
 #Education{
-  margin-top: 120px;
+  margin-top: 30px;
 }
 
 #Education img{
@@ -148,29 +139,25 @@ ul .skill{
   margin-top: -10px;
 }
 #frontendSkills{
-  margin-top: 100px;
+  margin-top: 30px;
 }
 #skills{
-  margin-top: 120px;
+  margin-top: 30px;
 }
 #languges{
-  margin-top: 70px;
+  margin-top: 20px;
 }
 #hobbies{
-  margin-top: 70px;
-
-  margin-bottom: 200px;
+  margin-top: 10px;
 }
 
 /*----------------------------------*/
-
-
 
 /*----------- right side -----------*/
 
 .CV_list{
   position: fixed;
-  padding-top: 120px;
+  padding-top: 80px;
  font-size: 20px;
  font-weight: bold;
  text-align: center;
@@ -178,6 +165,7 @@ ul .skill{
  bottom: 0px;
  height: 100%;
  background-color: rgb(243, 243, 243);
+ background-color: rgb(21, 53, 99);
  z-index: -1;
 }
 .CV_list button{
@@ -198,6 +186,18 @@ ul .skill{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------- mobile view ------------------- */
 
 
@@ -215,15 +215,47 @@ ul .skill{
 
 
    /* header style */
+   .header{
+    /* background-image: url(photos/max.png); */
+   }
    .header .bigname{
       font-size: 23px;
+      margin-bottom: 5px;
+      padding-bottom: 10px;
    }
+   .header div .mobile{
+    display: block;
+   }
+   .header .desktop{
+    display: none;
+   }
+   .header div div .welcomeText{
+    font-size: 17px;
+    padding: 10px;
+   }
+   .header div div .linkDiv{
+    padding: 5px;
+    margin-bottom: 5px;
+   }
+   .header div div div .link{
+    font-size: 15px;
+   }
+   .header div div div .link img{
+    width: 25px;
+    height: 25px;
+   }
+   .header .head img{
+    height: 200px;
+    width: 150px;
+   }
+
    /* --------------*/
 
    /* personal department */
    #personal{
     padding: 0px;
     margin: 0px;
+    margin-bottom: 250px;
    }
    #personal img{
     height: 20px;
@@ -288,7 +320,6 @@ ul .skill{
   #hobbies{
     padding: 0px;
     margin: 0px;
-    margin-bottom: 200px;
   }
   
 }
