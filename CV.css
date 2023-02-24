@@ -120,11 +120,11 @@
     margin: 25px 0px;
   }
   .paragraph{
-    padding: 10px;
     font-weight: 650;
     font-size: 18px;
-    padding-left: 30px;
     color: rgb(90, 88, 88);
+    padding: 10px;
+    padding-left: 30px;
   }
 
   /* // personal department icons  */
@@ -350,6 +350,10 @@ ul .skill{
     margin: 0px;
   }
   #hobbies{
+    padding: 0px;
+    margin: 0px;
+  }
+  #projects{
     padding: 0px;
     margin: 0px;
   }
