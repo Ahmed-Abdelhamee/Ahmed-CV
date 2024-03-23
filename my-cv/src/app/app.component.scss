@@ -67,6 +67,7 @@
     float: right;
     animation-name: fadeUp;
     animation-duration: 3.5s;
+    box-shadow: 0px 0px 16px #cdcdcd;
   }
   .welcomeText{
     color: $maincolor;
@@ -139,11 +140,14 @@
 
 ul .skill{
   font-size: 25px;
-  padding-left: 20px;
+  padding-left:  17px;
+  display: inline-block;
   font-weight: 600;
+  margin: 10px;
 }
 .liGroup{
   margin-top: 30px;
+  list-style: circle;
 }
 
 #personal{
@@ -216,16 +220,6 @@ ul .skill{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* ------------------- mobile view ------------------- */
 
 
@@ -240,8 +234,6 @@ ul .skill{
    .CV_list{
      display: none;
    }
-
-
    /* header style */
    .header{ 
     /* background-image: url(photos/max.png); */
@@ -295,7 +287,6 @@ ul .skill{
     display: none;
    }
    /* --------------------*/
-
 
    .groupTitle{
     font-size: 15px;
